@@ -1,0 +1,401 @@
+/* General */
+* {
+  padding:0;
+  margin:0;
+}
+
+.container{	
+
+}
+
+/* Header */
+
+.header {
+  background-color: #279BFF;
+  text-align:center;
+  opacity: .9;
+  border-bottom: .7px solid black;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  
+  
+  font-size: 22px;
+  padding: 15px;
+  
+  z-index:1;
+  position:fixed;
+  width:100%;
+}
+
+
+/* Menu */ 
+
+.header .menu {
+  text-align:center;
+  float: center;
+  list-style: none;
+  margin-top: 5px;
+ 
+}
+
+.menu > li {
+  display: inline;
+  
+}
+
+.menu a {
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.menu a:hover {
+	border: 1px solid white; 
+	padding: 24px;
+	padding-left:59px;
+	padding-right:59px;	
+	
+	background-color:white;
+	color: #279BFF;	
+}
+
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 1400px;
+  
+}
+
+.slide {
+  
+  background-color: white;
+  background-size: cover;
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.active-slide {
+    display: block;
+}
+
+.slideCopy h1 {
+  color: #363636;  
+  text-align:center;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 80px;
+  margin-top: 105px;
+  margin-bottom: 0px;
+}
+
+.slideCopy h2 {
+  color: #b7b7b7;
+  text-align:center;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin: 5px;
+}
+
+.slideCopy h3 {
+  color: #b7b7b7;
+  text-align:center;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin: 5px;
+}
+
+.slideCopy h4{
+	color: white;
+	/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+	 text-shadow: 5px 5px 10px black;
+  width:100%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  text-align:center;
+  
+  font-size: 200px;
+  margin: 5px;
+  margin-top:30%;
+}
+
+.slideCopy h5{
+  color: black;	
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  
+  font-size: 40px;
+  
+  margin-top:100px;
+}
+
+.slideCopy h6{
+  color: black;	
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  
+  font-size: 30px;
+  
+  margin-top:100px;
+}
+
+.slideCopy p {
+  color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+ 
+  width:100%;
+}
+
+.threeColumns{
+	-webkit-columns: 100px 3;
+	 margin-top:10px;
+}
+
+.twoColumns{
+	-webkit-columns: 200px 2;
+	 margin-top:50px;
+	 
+}
+
+.slide-img {
+	position:absolute;
+  text-align: right;
+}
+
+.profilePic{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+	/*This should be based off the size of the image*/
+	
+	width: 260px;
+	height: 260px;
+	border-radius: 130px;
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #31A1FF 0%, #60717F 100%, #B7C3CC 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, #31A1FF, #60717F);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, #31A1FF 0%, #60717F 100%, #B7C3CC 95%);
+	
+	/*This determines how big the image will be on the circle*/
+	padding: 10px; /*if you change this  you must change the margin bottom when you hover to
+						padding/2 + marginTop + marginBottom = hover: (marginTop + marginBottom)*/
+	/*This provides space inbetween the image and the titles*/
+	margin-top: 60px;
+	margin-bottom: 0px;
+	
+}
+.profilePic:hover{
+
+	
+	/*This should be based off the size of the image*/
+	width: 260px;
+	height: 260px;
+	border-radius: 130px;
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #31A1FF 0%, #60717F 100%, #B7C3CC 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, #31A1FF, #60717F);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, #31A1FF 0%, #60717F 100%, #B7C3CC 95%);
+	/* background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #FF1C11 0%, #BF150D 100%, black 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, #FF1C11, #BF150D);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, #FF1C11 0%, #BF150D 100%, black 95%); */
+	/*This provides space inbetween the image and the titles*/
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+/* Slide feature */
+
+.slideFeature {
+  text-align: center;
+   
+  background-image: url('http://www.calbaptist.edu/files/5913/6331/0707/cbu-yeager-entrance-day-1600x600.jpg'); 
+  background-repeat:no-repeat;
+
+   background-size:cover;
+ 
+  height: 700px;
+ /*  border: 1px solid black;  */
+}
+
+.slideFeature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
+}
+
+.slideFeature a {
+  display: block;
+  color: #6fc5e0;
+  
+  font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 20px;
+}
+
+.slideNavigation {
+  z-index:1;
+  position:fixed;
+  opacity: .9;
+  background-color: #279BFF; 
+  border-top: .7px solid black;
+  height:80px;
+  width:100%;
+  bottom: .001%;
+  text-align:center;
+}
+
+.prevArrow {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+
+}
+
+.nextArrow {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+
+}
+
+.navDots {
+ 
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  
+ }
+
+.navDots li {
+  color: #60717F;
+  display: inline;
+  font-size: 80px;
+  margin-right: 5px;
+}
+
+.navDots li.active-dot {
+  color: white;
+  font-size: 80px;
+  width:128px;
+    margin: 10px;
+    border:10px solid red;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+  
+}
+
+/* Tab menu */
+
+.tabContainer{
+	border: 2px solid #B7C3CC;
+	padding: 20px;
+	padding-bottom: 50px;
+	margin-bottom:300px;
+	
+}
+
+.codeContainer{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #31A1FF;
+	background-color: #E5F3FF;
+	margin-bottom: 70px;
+	margin-top: 30px;
+	
+	
+}
+
+.codeContainer p{
+	color: #60717F;
+	font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15em;
+    line-height: 1.75em;
+    margin-bottom: 15px;
+ 
+    width:100%;
+}
+
+/*Code Navigation*/
+
+.codeNavigator{
+	position:fixed;
+	text-align: center;
+	float: left;
+	left:0%;
+	width:12%;
+	
+	padding: 20px;
+	background-color: white;
+	border: 2px solid #C3CFD9;
+	
+}
+
+.codeNavigator a{
+	display: block;
+	color: #60717F;
+	  
+	font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	  
+	font-size: 20px;	
+}
+
+.lineSeparator{
+	height:2px;
+	width:100%;
+	background:#C3CFD9;
+
+	border-bottom:1px double #C3CFD9;
+	margin-bottom:50px;
+}
+
+
+/*Here is the format for things interested in*/
+.interestBox{
+	width:100%;
+	position:relative;
+	float:left;
+	right:0%;
+		
+	margin-top:40px;
+	margin-bottom:20px;
+	
+	
+	background-color: white;
+	border: 2px solid #C3CFD9;
+	
+}
+
+.interestBox img{	
+	
+
+	margin: 20px;
+	background-color: white;
+	
+}
+
+
