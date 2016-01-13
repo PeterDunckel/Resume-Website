@@ -8,4 +8,4 @@ Skills contains my skills along with ratings. Projects has different school rela
 of page and different sections. Contacts simply contains my email.
 
 Next Steps:
-Edit projects page to allow code to be in readable format. Add code to make resizing page functional with css. 
+Edit projects page to allow code to be in readable format. Add code to make resizing page functional with css. Enable download resume requested.
